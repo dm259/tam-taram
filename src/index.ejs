@@ -9,20 +9,50 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 
 <!-- Код для примера -->
 
 <% const menuItems = [
-    {title: 'HairCare', link: '#'},
-    {title: 'Color', link: '#'},
-    {title: 'Styling', link: '#'}
+    {title: 'HAIRCARE', link: '#'},
+    {title: 'COLOR', link: '#'},
+    {title: 'STYLING', link: '#'},
+    {title: 'TEXTURE', link: '#'},
+    {title: 'GET INSPIRED', link: '#'},
+    {title: 'SOCIAL', link: '#'},
+    {title: 'NEWS', link: '#'},
+    {title: 'ABOUT', link: '#'},
+    {title: 'PROFESSIONAL', link: '#'},
+    /* ... */
+]; %>
+
+<% const menuItemsFooter = [
+    {title: 'PRIVACY POLICY', link: '#'},
+    {title: 'TERMS OF USE', link: '#'},
+    {title: 'CONTACT US', link: '#'},
+    {title: 'NEW SLETTER', link: '#'},
+    {title: 'SITE MAP', link: '#'},
     /* ... */
 ]; %>
 
 <header class="header">
     <div class="header__top">
+        <div class="zag"><p>TAM-TARAM</p></div>
+        <div class="header__select">
+            <div class="select">
+                <select>
+                    <option>NEAREST SALON</option>
+                    <option>DIFFERENT SALON</option>
+                </select>
+                <p>Plush Salon 92101</p>
+            </div>
+        </div>
+        <div class="header__img"><img src="img/ico_search.svg"></div>
     </div>
     <div class="header__bottom">
         <div class="menu header__menu">
@@ -33,15 +63,72 @@
     </div>
 </header>
 
-<img src="img/pic.png" alt="">
+<div class="content">
+    <div class="content__link">
+        <a href="#">HOME </a>
+        <a href="#">/ VIDEOS</a>
+    </div>
+    <div class="content__top">
+        <p>VIDEOS</p>
+        <div class="iframe" align="center">
+            <a data-fancybox="gallery" href="https://youtu.be/z8M0Fa1JVco"><img src="https://img.youtube.com/vi/z8M0Fa1JVco/maxresdefault.jpg"></a>
+            <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nisl at ullamcorper egestas, felisadi piscing dolor, a interdum lorem urna quis magna.</b></p>
+            <p><img src="img/line.png"></p>
+        </div>
+    </div>
+    <div class="content__bottom">
+        <p>STEP <span>BY</span> STEP</p>
+        <div class="slider_1">      
+            <div><a data-fancybox="gallery" href="https://youtu.be/DG4FAU5qmMY"><img src="https://img.youtube.com/vi/DG4FAU5qmMY/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/Wi2KcdoCuo4"><img src="https://img.youtube.com/vi/Wi2KcdoCuo4/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/8H6dYUgQKB8"><img src="https://img.youtube.com/vi/8H6dYUgQKB8/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/PZjGrmHdFME"><img src="https://img.youtube.com/vi/PZjGrmHdFME/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/_wLGr24VeoI"><img src="https://img.youtube.com/vi/_wLGr24VeoI/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/z8M0Fa1JVco"><img src="https://img.youtube.com/vi/z8M0Fa1JVco/maxresdefault.jpg"></a></div>
+        </div>
+        <div class="slider1__button"><button class="next1">LOAD MORE</button></div>
+        <p>CRAFT <span>EDUCATION</span></p>
+        <div class="slider_2">
+            <div><a data-fancybox="gallery" href="https://youtu.be/RmNWNLXmswk"><img src="https://img.youtube.com/vi/RmNWNLXmswk/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/-tztXOz8Vc0"><img src="https://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/kUfIVtyydgQ"><img src="https://img.youtube.com/vi/kUfIVtyydgQ/maxresdefault.jpg"></a></div>
+        </div>
+        <div class="slider2__button"><button class="next2">LOAD MORE</button></div>
+        <p>INSPIRATION</p>
+        <div class="slider_3">
+            <div><a data-fancybox="gallery" href="https://youtu.be/VmmwwzR536g"><img src="https://img.youtube.com/vi/VmmwwzR536g/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/6oPBFnsqJW8"><img src="https://img.youtube.com/vi/6oPBFnsqJW8/maxresdefault.jpg"></a></div>
+            <div><a data-fancybox="gallery" href="https://youtu.be/_wLGr24VeoI"><img src="https://img.youtube.com/vi/_wLGr24VeoI/maxresdefault.jpg"></a></div>
+        </div>
+        <div class="slider3__button"><button class="next3">LOAD MORE</button></div>
+    </div>
+</div>
+
 <footer class="footer">
-    <div class="menu menu_bottom footer__menu">
-        <% menuItems.forEach((item) => { %>
-        <li class="menu__item"><a class="menu__link" href="<%= item.link; %>"><%= item.title %></a></li>
-        <% }) %>
+    <div class="menu menu_bottom">
+        <div class="loc">
+            <p class="footer__loc">LOCATION: UNITED STATES<br> <span>LANGUAGE: ENGLISH</span></p>
+        </div>
+        <div class="footer__menu">
+            <% menuItemsFooter.forEach((item) => { %>
+            <li class="footer__item"><a class="footer__link" href="<%= item.link; %>"><%= item.title %></a></li>
+            <% }) %>
+        </div>
+        <div class="page">
+            <li class="footer__page">    
+                <a href="#"><img src="img/ico_facebook.svg"></a>
+                <a href="#"><img src="img/ico_twitter.svg"></a>
+                <a href="#"><img src="img/ico_pinterest.svg"></a>
+                <a href="#"><img src="img/ico_youtube.svg"></a>
+                <a href="#"><img src="img/ico_instagram.svg"></a>
+            </li>
+        </div>
     </div>
 </footer>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
